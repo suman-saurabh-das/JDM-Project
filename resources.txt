@@ -1,3 +1,5 @@
+< ------------------------------------------------------------------ >
+
 Adding images from google drive
     
     Directly adding the sharable link will not work so,
@@ -7,8 +9,37 @@ Adding images from google drive
         template - http://drive.google.com/uc?export=view&id=URLIDHere
         final link - http://drive.google.com/uc?export=view&id=1T0Qyo4HsHJv-rZI8ruHhMob2BrgG-N4_
 
+< ------------------------------------------------------------------ >
+
+Dropdown menu Animation
+
+    Stack overflow article - https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property#:~:text=If%20you%20even%20toggle%20the,Set%20the%20opacity%20to%200%20.
+
+    Instead of callbacks, which don't exist in CSS, we can use transition-delay property.
+
+    #selector {
+    overflow: hidden;  /* Hide the element content, while height = 0 */
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+    }
+    #selector.visible {
+        height: auto; opacity: 1;
+        transition: height 0ms 0ms, opacity 600ms 0ms;
+    }
+
+    So, what's going on here?
+
+    When visible class is added, both height and opacity start animation without delay (0 ms), though height takes 0 ms to complete animation (equivalent of display: block) and opacity takes 600 ms.
+
+    When visible class is removed, opacity starts animation (0 ms delay, 400 ms duration), and height waits 400 ms and only then instantly (0 ms) restores initial value (equivalent of display: none in the animation callback).
+
+    Note, this approach is better than ones using visibility. In such cases, the element still occupies the space on the page, and it's not always suitable.
+
+< ------------------------------------------------------------------ >
 
 https://drive.google.com/file/d/1MsPTsHAdxxllo5IokM_572rGv3D474Dt/view?usp=sharing
 
 http://drive.google.com/uc?export=view&id=1MsPTsHAdxxllo5IokM_572rGv3D474Dt
 http://drive.google.com/uc?export=view&id=
+
