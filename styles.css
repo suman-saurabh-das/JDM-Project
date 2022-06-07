@@ -1,5 +1,152 @@
-/* GLOBAL STYLES */
+/* -------------------- GLOBAL STYLES BEGINING -------------------- */
 body{
-    background-color: aquamarine;
+    font-family: 'Cairo', sans-serif;
     margin: 0;
+}
+
+/* --------------------- GLOBAL STYLES ENDING --------------------- */
+
+/* -------------------- NAVIGATION BAR BEGINING -------------------- */
+#navigation-bar{
+    background-color: white;
+    height: 7.5rem; width: 100%;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+}
+
+/* JDM logo */
+.jdm-logo-container {
+    background-color: #fff;
+    border: 0.5px solid #ccc;
+    display: inline-block;
+    height: 7rem; width: 7rem;
+    margin-left: 4rem;
+    padding: 0.8rem;
+}
+.jdm-logo {
+    height: 7rem; width: 7rem;
+}
+
+/* Nav-Bar (Cars-sideview) */
+.nav-bar-car-models-container {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    top: -16px; left: 24px;
+    text-align: center;
+}
+.nav-bar-car-models-container:hover {
+    border-bottom: 2px solid #ef2b2c;
+}
+.nav-bar-car-models-sideview {
+    height: 2.2rem;
+}
+.nav-bar-links {
+    color: black;
+    float: right;
+    font-size: 1rem;
+    /* For controling red bottom border below link */
+    height: 4.9rem;
+    position: relative;
+    text-decoration: none;
+    top: 2.5rem; right: 4rem;
+}
+.nav-bar-links:nth-of-type(2) {
+    margin-left: 1.2rem;
+}
+.nav-bar-links:hover {
+    border-bottom: 2px solid #ef2b2c;
+    color: #ef2b2c;
+}
+
+/* Nav-Bar (Shop/Dealer/Menu) */
+.nav-bar-menu-option {
+    border-left: 2px solid #ccc;
+    color: black;
+    float: right;
+    font-size: 2rem;
+    margin-left: 0.8rem;
+    padding-left: 0.8rem;
+    position: relative;
+    top: 1.6rem; right: 4rem;
+}
+.nav-bar-menu-option:hover {
+    color: #ef2b2c;
+}
+#nav-menu-dropdown-large-display {
+    display: none;
+    height: 60vh; width: 100vw;
+    position: relative;
+    top: -23px;
+}
+
+/* Showing Drop down menu on hover */
+#nav-bar:hover #nav-menu-dropdown-large-display {
+    display: block;
+}
+
+/* Dropdown Menu */
+#nav-menu-dropdown-large-display{
+    text-align: center;
+}
+.car-img-container{
+    margin: 3rem 6rem;
+    display: inline-block;
+}
+.car-img{
+    height: 20rem;
+}
+.car-details-container{
+    display: inline-block;
+    position: relative;
+    top: -5rem;
+}
+.car-details{
+    font-size: 2rem;
+    text-align: left;
+}
+.car-details a{
+    color: black;
+    text-decoration: none;
+}
+.car-details img{
+    position: relative;
+    top: 10px;
+}
+.car-details a:hover{
+    color: #ef2b2c;
+}
+
+/* --------------------- NAVBAR RESPONSIVE --------------------- */
+
+@media (max-width:1023px) {
+    #nav-bar {
+        display: none;
+    }
+}
+
+/* --------------------- NAVIGATION BAR ENDING --------------------- */
+
+#landing-section{
+    /* Since top bar is fixed and will be hidden on scrolling, so I am adding this space to make sure content below is visible*/
+    padding-top: 8.7rem;
+    height: 100vh;
+    background-color: lightcoral;
+}
+#models-section{
+    height: 100vh;
+    background-color: lightskyblue;
+}
+#dealer-section{
+    height: 100vh;
+    background-color: lightgreen;
+}
+#jdm-social-section{
+    height: 100vh;
+    background-color: khaki;
+}
+#jdm-bottom-navigation-menu{
+    height: 100vh;
+    background-color: plum;
 }

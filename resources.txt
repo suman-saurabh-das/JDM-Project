@@ -1,0 +1,14 @@
+Adding images from google drive
+    
+    Directly adding the sharable link will not work so,
+    Step 1 - copy the sharable url - https://drive.google.com/file/d/1T0Qyo4HsHJv-rZI8ruHhMob2BrgG-N4_/view?usp=sharing
+    Step 2 - find the url id from this link - 1T0Qyo4HsHJv-rZI8ruHhMob2BrgG-N4_
+    Step 3 - Paste the url id after the id field in below template
+        template - http://drive.google.com/uc?export=view&id=URLIDHere
+        final link - http://drive.google.com/uc?export=view&id=1T0Qyo4HsHJv-rZI8ruHhMob2BrgG-N4_
+
+
+https://drive.google.com/file/d/1MsPTsHAdxxllo5IokM_572rGv3D474Dt/view?usp=sharing
+
+http://drive.google.com/uc?export=view&id=1MsPTsHAdxxllo5IokM_572rGv3D474Dt
+http://drive.google.com/uc?export=view&id=
