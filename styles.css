@@ -4,6 +4,50 @@ body{
     margin: 0;
 }
 
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: #ef2b2c;
+}
+.black-lg-title{
+    color: #000;
+    font-size: 2.5rem;
+}
+.white-lg-title{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.black-lg-heading{
+    color: #000;
+    font-size: 2.25rem;
+}
+.white-lg-heading{
+    color: #fff;
+    font-size: 2.25rem;
+}
+.black-md-heading{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.white-md-heading{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.black-sm-heading{
+    color: #000;
+    font-size: 1rem;
+}
+.white-sm-heading{
+    color: #fff;
+    font-size: 1rem;
+}
+.bottom-gray-line{
+    border-bottom: 1px solid #ccc;
+}
+
 /* --------------------- GLOBAL STYLES ENDING --------------------- */
 
 /* -------------------- NAVIGATION BAR BEGINING -------------------- */
@@ -23,6 +67,8 @@ body{
     height: 7rem; width: 7rem;
     margin-left: 4rem;
     padding: 0.8rem;
+    position: relative;
+    z-index: 5;
 }
 .jdm-logo {
     height: 7rem; width: 7rem;
@@ -75,11 +121,13 @@ body{
     color: #ef2b2c;
 }
 #nav-menu-dropdown-large-display {
+    /* background-color: #ef2b2c; */
     position: relative;
-    top: -23px;
+    top: -18px;
 
     /* Animation to hide */
-    overflow: hidden;  /* Hide the element content, while height = 0 */
+    /* Hide the element content, while height = 0 */
+    overflow: hidden; 
     height: 0;
     opacity: 0;
     transition: height 0ms 400ms, opacity 400ms 0ms;
@@ -94,34 +142,22 @@ body{
 
 /* Dropdown Menu */
 #nav-menu-dropdown-large-display{
+    align-items: center;
+    column-gap: 2rem;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
-.car-img-container{
-    margin: 3rem 6rem;
-    display: inline-block;
+.dropdown-car-img-container{
+    max-width: 30rem;
 }
-.car-img{
-    height: 20rem;
+.dropdown-car-img{
+    width: 100%;
 }
-.car-details-container{
-    display: inline-block;
-    position: relative;
-    top: -5rem;
-}
-.car-details{
-    font-size: 2rem;
+.dropdown-car-details-container{
+    width: 15rem;
     text-align: left;
-}
-.car-details a{
-    color: black;
-    text-decoration: none;
-}
-.car-details img{
-    position: relative;
-    top: 10px;
-}
-.car-details a:hover{
-    color: #ef2b2c;
 }
 
 /* --------------------- NAVBAR RESPONSIVE --------------------- */
