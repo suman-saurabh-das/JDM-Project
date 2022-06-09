@@ -1,0 +1,144 @@
+/* -------------------- NAVIGATION BAR BEGINING -------------------- */
+#navigation-bar{
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgb(141, 141, 141);
+    height: 7rem; width: 100%;
+    max-width: 1920px;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+}
+
+/* JDM logo */
+.jdm-logo-container {
+    background-color: #fff;
+    border: 0.5px solid #ccc;
+    display: inline-block;
+    height: 6rem; width: 6rem;
+    margin-left: 4rem;
+    padding: 0.8rem;
+    position: relative;
+    z-index: 15;
+}
+.jdm-logo {
+    width: 100%;
+}
+
+/* NAV BAR CAR IMAGE LINKS (For Large Displays) */
+.nav-bar-car-models-container {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    top: -8px; left: 24px;
+    text-align: center;
+}
+.nav-bar-car-models-container:hover {
+    border-bottom: 2px solid #ef2b2c;
+}
+.nav-bar-car-models-image {
+    height: 2.2rem;
+}
+
+/* NAV BAR SHOP AND DEALER LINKS (For Large Displays) */
+.nav-bar-links {
+    float: right;
+    margin-left: 2rem;
+    /* For controling red bottom border below link */
+    height: 4.4rem;
+    position: relative;
+    top: 2.5rem; right: 4rem;
+}
+/* Adding red bottom border to the shop and dealer links */
+.nav-bar-links:hover {
+    border-bottom: 2px solid #ef2b2c;
+}
+
+/* NAV BAR DROP DOWN MENU */
+#nav-menu-dropdown-large-display {
+    align-items: center;
+    background-color: #fff;
+    column-gap: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    top: -10px;
+    text-align: center;
+
+    /* Animation to hide */
+    /* Hide the element content, while height = 0 */
+    overflow: hidden; 
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+/* Showing Drop down menu on hover */
+#nav-bar:hover #nav-menu-dropdown-large-display {
+    /* Animation to show */
+    height: 60vh; opacity: 1;
+    transition: height 0ms 0ms, opacity 600ms 0ms;
+}
+.dropdown-image-container{
+    max-width: 30rem;
+}
+.dropdown-image{
+    width: 100%;
+}
+.dropdown-car-details-container{
+    width: 18rem;
+    text-align: left;
+}
+.dropdown-options-dealer-details{
+    max-width: 22rem;
+}
+
+
+
+/* Side Menu Button */
+
+/* Side Menu */
+/* #nav-menu-sidebar-small-display{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 60vw;
+}
+.side-menu-car-models-container{
+    padding: 8%;
+    text-align: center;
+}
+.side-menu-car-models-sideview{
+    width: 100%;
+}
+.side-menu-options{
+    display: block;
+} */
+
+/* --------------------- NAVBAR RESPONSIVE --------------------- */
+
+@media (max-width:1023px) {
+    #navigation-bar{
+        height: 5.8rem;
+    }
+    #nav-bar {
+        display: none;
+    }
+    .jdm-logo-container {
+        height: 5.5rem; width: 5.5rem;
+        margin-left: 1.5rem;
+        padding: 0.4rem;
+    }
+}
+@media (max-width:767px) {
+    #navigation-bar{
+        height: 4.5rem;
+    }
+    #nav-bar {
+        display: none;
+    }
+    .jdm-logo-container {
+        height: 4.5rem; width: 4.5rem;
+        margin-left: 1rem;
+        padding: 0.2rem;
+    }
+}
+/* --------------------- NAVIGATION BAR ENDING --------------------- */

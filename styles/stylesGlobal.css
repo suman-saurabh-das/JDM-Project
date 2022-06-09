@@ -1,0 +1,85 @@
+/* -------------------- GLOBAL STYLES BEGINING -------------------- */
+body{
+    font-family: 'Cairo', sans-serif;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: #ef2b2c;
+}
+.black-lg-title{
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.white-lg-title{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.black-lg-text{
+    color: #000;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.white-lg-text{
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.black-md-text{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.white-md-text{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.black-sm-text{
+    color: #000;
+    font-size: 1.25rem;
+}
+.white-sm-text{
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.bold-text{
+    font-weight: 600;
+}
+
+.bottom-gray-line{
+    border-bottom: 1px solid #ccc;
+}
+
+/* --------------------- GLOBAL STYLES ENDING --------------------- */
+
+#landing-section{
+    /* Since top bar is fixed and will be hidden on scrolling, so I am adding this space to make sure content below is visible*/
+    padding-top: 8.7rem;
+    height: 100vh;
+    background-color: lightcoral;
+}
+#models-section{
+    height: 100vh;
+    background-color: lightskyblue;
+}
+#dealer-section{
+    height: 100vh;
+    background-color: lightgreen;
+}
+#jdm-social-section{
+    height: 100vh;
+    background-color: khaki;
+}
+#jdm-bottom-navigation-menu{
+    height: 100vh;
+    background-color: plum;
+}
