@@ -4,8 +4,8 @@ var supra = "images/Toyota Supra.png";
 var gtr = "images/Nissan GT-R.png";
 var imperza = "images/Subaru Imperza.png";
 var lancer = "images/Mitsubishi Lancer.png";
-var dealer = "images/map.png";
-var shop = "images/shop.jpeg";
+var dealer = "images/Dealer Map.png";
+var shop = "images/Shop.png";
 
 // NAV BAR FUNCTION - SCROLL UP TO HIDE & SCROLL DOWN TO SHOW
 var lastScrollTop = 0;
@@ -80,8 +80,9 @@ function updateDropdown(carName) {
         case "dealer" : dropdownOptionsShopDetails.style.display = "none"
                     dropdownOptionsDealerDetails.style.display = "block"
                     dropdownImage.setAttribute("src", dealer);
-                    dropdownOptionsHeader.innerHTML = "<a href=''>Contact Us</a>";
+                    dropdownOptionsHeader.innerHTML = "<a href='mailto:dsumansaurabh@gmail.com'><i class='fa-solid fa-envelope'></i>&ensp;Mail Us</a>";
                     break;
+                    
         case "shop" : dropdownOptionsShopDetails.style.display = "block"
                     dropdownOptionsDealerDetails.style.display = "none"
                     dropdownImage.setAttribute("src", shop);
@@ -89,3 +90,16 @@ function updateDropdown(carName) {
                     break;
     }
 }
+
+// SIDE BAR SHOW & HIDE
+
+var sideBar = document.getElementById("side-bar");
+var sideBarButtonOpen = document.getElementById("side-bar-button-open");
+var sideBarButtonClose = document.getElementById("side-bar-button-close");
+
+sideBarButtonOpen.addEventListener("click", function(){
+    sideBar.style.transform = "translateX(0)";
+})
+sideBarButtonClose.addEventListener("click", function(){
+    sideBar.style.transform = "translateX(100vw)";
+})

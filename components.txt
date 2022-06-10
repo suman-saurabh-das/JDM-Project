@@ -5,3 +5,4 @@ var supra = "http://drive.google.com/uc?export=view&id=1-O5KPertTVujkFyQo7-KGX25
 var gtr = "http://drive.google.com/uc?export=view&id=1b7FKueTyVW6aUu6W3Dhgmf_68Xuc7Idj";
 var imperza = "http://drive.google.com/uc?export=view&id=1-TinyPwCIetI8qXXDWEYFMQl1IbWqIeF";
 var lancer = "http://drive.google.com/uc?export=view&id=1MsPTsHAdxxllo5IokM_572rGv3D474Dt";
+

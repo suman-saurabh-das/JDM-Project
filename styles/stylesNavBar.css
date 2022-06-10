@@ -7,6 +7,7 @@
     position: fixed;
     top: 0;
     transition: 0.5s;
+    z-index: 10;
 }
 
 /* JDM logo */
@@ -42,7 +43,7 @@
 /* NAV BAR SHOP AND DEALER LINKS (For Large Displays) */
 .nav-bar-links {
     float: right;
-    margin-left: 2rem;
+    margin-left: 1rem;
     /* For controling red bottom border below link */
     height: 4.4rem;
     position: relative;
@@ -56,7 +57,10 @@
 /* NAV BAR DROP DOWN MENU */
 #nav-menu-dropdown-large-display {
     align-items: center;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: url("/images/Dropdown\ Background\ Image.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
     column-gap: 3rem;
     display: flex;
     flex-wrap: nowrap;
@@ -78,6 +82,8 @@
     height: 60vh; opacity: 1;
     transition: height 0ms 0ms, opacity 600ms 0ms;
 }
+
+/* NAV BAR DROP DOWN MENU CONTENTS */
 .dropdown-image-container{
     max-width: 30rem;
 }
@@ -92,53 +98,111 @@
     max-width: 22rem;
 }
 
+/* SIDE BAR TOGGLE BUTTON */
+#side-bar-button-open{
+    position: absolute;
+    top: 25%; right: 4%;
+    z-index: 15;
+}
+#side-bar-button-open:hover{
+    color: #ef2b2c;
+}
+#side-bar-button-close{
+    color: #000;
+    font-size: 2rem;
+    position: absolute;
+    top: 1%; right: 8%;
+    z-index: 25;
+}
+#side-bar-button-close:hover{
+    color: #ef2b2c;
+}
 
-
-/* Side Menu Button */
-
-/* Side Menu */
-/* #nav-menu-sidebar-small-display{
+/* SIDE BAR MENU */
+#side-bar{
+    /* background-color: #fff; */
+    background-image: url("/images/Dropdown\ Background\ Image.png");
+    box-sizing: border-box;
+    background-position: right;
+    height: 100%;
+    padding: 8% 4% 4%;
+    position: fixed;
+    right: 0; top: 0;
+    transform: translateX(100vw);
+    transition: transform 250ms ease-in-out;
+    width: 50vw;
+    z-index: 20;
+}
+#side-bar-container{
+    margin-top: 5%;
     display: grid;
     grid-template-columns: auto auto;
-    width: 60vw;
 }
-.side-menu-car-models-container{
-    padding: 8%;
+.side-bar-car-models-container{
     text-align: center;
+    padding: 4%;
 }
-.side-menu-car-models-sideview{
+.side-bar-car-models-image{
     width: 100%;
+}
+.side-menu-options-container{
+    margin-top: 10%;
 }
 .side-menu-options{
     display: block;
-} */
+    margin: 3% 6%;
+}
+
 
 /* --------------------- NAVBAR RESPONSIVE --------------------- */
 
+@media(min-width:1023px) {
+    #side-bar-button-open{
+        display: none;
+    }
+    #side-bar{
+        display: none;
+    }
+}
+
 @media (max-width:1023px) {
     #navigation-bar{
-        height: 5.8rem;
+        height: 5.5rem;
     }
     #nav-bar {
         display: none;
     }
     .jdm-logo-container {
-        height: 5.5rem; width: 5.5rem;
+        height: 5rem; width: 5rem;
         margin-left: 1.5rem;
         padding: 0.4rem;
     }
+    #side-bar{
+        display: block;
+    }
 }
+
 @media (max-width:767px) {
     #navigation-bar{
-        height: 4.5rem;
-    }
-    #nav-bar {
-        display: none;
+        height: 4.2rem;
     }
     .jdm-logo-container {
-        height: 4.5rem; width: 4.5rem;
+        height: 4rem; width: 4rem;
         margin-left: 1rem;
         padding: 0.2rem;
     }
 }
+
+@media (max-width:500px) {
+    #side-bar{
+        width: 100vw;
+    }
+    #side-bar-container{
+        margin-top: 15%;
+    }
+    .side-bar-car-models-container{
+        text-align: center;
+    }
+}
+
 /* --------------------- NAVIGATION BAR ENDING --------------------- */
