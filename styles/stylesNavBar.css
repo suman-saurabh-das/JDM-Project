@@ -15,7 +15,7 @@
     background-color: #fff;
     border: 0.5px solid #ccc;
     display: inline-block;
-    height: 6rem; width: 6rem;
+    height: 8rem; width: 8rem;
     margin-left: 4rem;
     padding: 0.8rem;
     position: relative;
@@ -29,8 +29,9 @@
 .nav-bar-car-models-container {
     display: inline-block;
     margin-left: 5px;
+    padding-bottom: 16px;
     position: relative;
-    top: -8px; left: 24px;
+    top: 20px; left: 24px;
     text-align: center;
 }
 .nav-bar-car-models-container:hover {
@@ -45,7 +46,7 @@
     float: right;
     margin-left: 1rem;
     /* For controling red bottom border below link */
-    height: 4.4rem;
+    height: 4.5rem;
     position: relative;
     top: 2.5rem; right: 4rem;
 }
@@ -66,7 +67,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     position: relative;
-    top: -10px;
+    top: -15px;
     text-align: center;
 
     /* Animation to hide */
@@ -173,7 +174,7 @@
         display: none;
     }
     .jdm-logo-container {
-        height: 5rem; width: 5rem;
+        height: 6.5rem; width: 6.5rem;
         margin-left: 1.5rem;
         padding: 0.4rem;
     }
@@ -187,7 +188,7 @@
         height: 4.2rem;
     }
     .jdm-logo-container {
-        height: 4rem; width: 4rem;
+        height: 5rem; width: 5rem;
         margin-left: 1rem;
         padding: 0.2rem;
     }

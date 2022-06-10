@@ -6,7 +6,7 @@ body{
     box-sizing: border-box;
 }
 
-html, body{
+body{
     overflow-x: hidden;
 }
 
@@ -20,6 +20,7 @@ a{
 }
 a:hover{
     color: #ef2b2c;
+    text-decoration: none;
 }
 .black-lg-title{
     color: #000;
