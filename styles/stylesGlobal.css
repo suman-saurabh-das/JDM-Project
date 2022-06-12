@@ -1,4 +1,5 @@
 /* -------------------- GLOBAL STYLES BEGINING -------------------- */
+
 body{
     font-family: 'Cairo', sans-serif;
     margin: 0 auto;
@@ -80,44 +81,8 @@ a:hover{
     border-bottom: 1px solid #ccc;
 }
 
+.red-text-highlight-hover:hover{
+    color: #ef2b2c;
+}
+
 /* --------------------- GLOBAL STYLES ENDING --------------------- */
-
-#landing-section{
-    /* Nav bar height is 7rem and it has z-index of 10
-    So in order to make sure that the main section and its contents are not hidden below the nav bar, this padding top of 7rem is being added. 
-    To make it work dynamically, this value will be different for different screen sizes. */
-    padding-top: 7rem;
-    height: 100vh;
-    background-color: lightcoral;
-}
-
-@media (max-width:1023px) {
-    #landing-section{
-        /* Nav bar height is 5.5rem*/
-        padding-top: 6rem;
-    }
-}
-@media (max-width:767px) {
-    #landing-section{
-        /* Nav bar height is 4.2*/
-        padding-top: 5rem;
-    }
-}
-
-#models-section{
-    height: 100vh;
-    background-color: lightskyblue;
-}
-#dealer-section{
-    height: 100vh;
-    background-color: lightgreen;
-}
-#jdm-social-section{
-    height: 100vh;
-    background-color: khaki;
-}
-#jdm-bottom-navigation-menu{
-    height: 100vh;
-    background-color: plum;
-}
-

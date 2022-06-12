@@ -1,0 +1,99 @@
+/* --------------- LANDING SECTION CAROUSEL BEGINING --------------- */
+
+#landing-section{
+    /* Nav bar height is 7rem and it has z-index of 10
+    So in order to make sure that the main section and its contents are not hidden below the nav bar, this padding top of 7rem is being added. 
+    To make it work dynamically, this value will be different for different screen sizes. */
+    padding-top: 7rem;
+}
+
+#first-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=17sTEAd2Hst1EJTx2-UQ7uy1Qq_m3uHcl);
+}
+#second-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=1Jptd_Kal9i7fJQ9OndCMqW-a5G6Bwqng);
+}
+#third-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=1gBs-ePXtbo_k6BqkztW6BjX_F6LvwbZY);
+}
+#fourth-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=1L__bnf0bZ6CtYrR0TE8dgN_O-8eLNhP5);
+}
+#fifth-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=1JoIug8mQlTj0-pWqVhTL9XHd45wT0Pj2);
+}
+#sixth-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=1213SFzxtEIYyzJh5UbehbFvg0PWgizTJ);
+}
+.landing-carousel-container{
+    width: 100vw; height: 85vh;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-text-container{
+    position: relative;
+    bottom: -75%; left: 5%;
+}
+.carousel-heading{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+.carousel-description{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/* --------------- LANDING SECTION RESPONSIVE --------------- */
+
+@media (max-width:1023px) {
+    #landing-section{
+        /* Nav bar height is 5.5rem*/
+        padding-top: 5.5rem;
+    }
+    .carousel-heading{
+        font-size: 2.25rem;
+    }
+    .carousel-description{
+        font-size: 1.75rem;
+    }
+    #first-carousel{
+        background-image: url(http://drive.google.com/uc?export=view&id=1OJafPcwmDpzRvV4mgI9jt8JSj6qSLKsk);
+    }
+}
+@media (max-width:767px) {
+    #landing-section{
+        /* Nav bar height is 4.2*/
+        padding-top: 4.2rem;
+    }
+    .landing-carousel-container{
+        height: 70vh;
+    }
+    .carousel-heading{
+        font-size: 2rem;
+    }
+    .carousel-description{
+        font-size: 1rem;
+    }  
+}
+
+/* --------------- LANDING SECTION CAROUSEL ENDING --------------- */
+
+#models-section{
+    height: 100vh;
+    background-color: lightskyblue;
+}
+#dealer-section{
+    height: 100vh;
+    background-color: lightgreen;
+}
+#jdm-social-section{
+    height: 100vh;
+    background-color: khaki;
+}
+#jdm-bottom-navigation-menu{
+    height: 100vh;
+    background-color: plum;
+}
