@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .social-container{
+            display: flex;
+            flex-direction: row;
+        }
+        .social-container-cols1{
+            background-color: royalblue;
+            height: 35rem; width: 33%;
+            margin: 2px;
+            display: grid;
+            grid-template-areas: 
+                'bigImage bigImage'
+                'smallImage1 smallImage2';
+        }
+        .social-container-cols2{
+            background-color: royalblue;
+            height: 35rem; width:33%;
+            margin: 2px;
+            display: grid;
+            grid-template-areas:
+                'smallImage1 smallImage2'
+                'bigImage bigImage';
+        }
+        .social-container-cols:nth-of-type(2){
+            background-color: gold;
+        }
+        .big-image{
+            background-image: url("images/JDM\ Shop\ Parts.webp");
+            background-position: center;
+            height: 20rem;
+            object-fit: cover;
+            grid-area: bigImage;
+        }
+        .small-image1{
+            background-image: url("images/Dyno\ Tuning\ 1.jpeg");
+            grid-area: smallImage1;
+            height: 15rem;
+        }
+        .small-image2{
+            background-image: url("images/Dyno\ Tuning\ 2.jpg");
+            grid-area: smallImage2;
+            height: 15rem;
+        }
+
+        @media (max-width: 1023px){
+            .social-container-cols1{
+            width: 100%;
+        }
+        .social-container-cols2{
+            display: none;
+        }
+        }
+        @media (max-width: 768px){
+            .social-container{
+            flex-direction: column;
+        }
+        .social-container-cols1{
+            width: 100%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="social-container">
+        <div class="social-container-cols1">
+            <div class="big-image">
+
+            </div>
+            <div class="small-image1">
+
+            </div>
+            <div class="small-image2">
+
+            </div>
+        </div>
+        <div class="social-container-cols2">
+            <div class="small-image1">
+
+            </div>
+            <div class="small-image2">
+
+            </div>
+            <div class="big-image">
+
+            </div>
+        </div>
+        <div class="social-container-cols1">
+            <div class="big-image">
+
+            </div>
+            <div class="small-image1">
+
+            </div>
+            <div class="small-image2">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

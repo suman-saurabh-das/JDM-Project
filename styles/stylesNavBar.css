@@ -60,7 +60,7 @@
 #nav-menu-dropdown-large-display {
     align-items: center;
     /* background-color: #fff; */
-    background-image: url("/images/Dropdown\ Background\ Image.png");
+    background-image: url("/images/Dropdown\ Background\ Image2.png");
     background-repeat: no-repeat;
     background-size: 100vw;
     column-gap: 3rem;
@@ -73,7 +73,7 @@
 
     /* Animation to hide */
     /* Hide the element content, while height = 0 */
-    overflow: hidden; 
+    overflow: hidden;
     height: 0;
     opacity: 0;
     transition: height 0ms 400ms, opacity 400ms 0ms;
@@ -97,7 +97,12 @@
     text-align: left;
 }
 .dropdown-options-dealer-details{
+    display: flex;
+    flex-wrap: nowrap;
     max-width: 22rem;
+}
+.drop-down-links{
+    padding: 2% 0;
 }
 
 /* SIDE BAR TOGGLE BUTTON */
@@ -123,7 +128,7 @@
 /* SIDE BAR MENU */
 #side-bar{
     /* background-color: #fff; */
-    background-image: url("/images/Dropdown\ Background\ Image.png");
+    background-image: url("/images/Dropdown\ Background\ Image2.png");
     box-sizing: border-box;
     background-position: right;
     height: 100%;
@@ -193,7 +198,6 @@
         padding: 0.2rem;
     }
 }
-
 @media (max-width:500px) {
     #side-bar{
         width: 100vw;

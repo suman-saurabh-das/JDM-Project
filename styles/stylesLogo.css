@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?qv4jwx');
-  src:  url('fonts/icomoon.eot?qv4jwx#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?qv4jwx') format('truetype'),
-    url('fonts/icomoon.woff?qv4jwx') format('woff'),
-    url('fonts/icomoon.svg?qv4jwx#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?k2oazh');
+  src:  url('fonts/icomoon.eot?k2oazh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?k2oazh') format('truetype'),
+    url('fonts/icomoon.woff?k2oazh') format('woff'),
+    url('fonts/icomoon.svg?k2oazh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,36 +25,48 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cars:before {
+.icon-carwash:before {
   content: "\e900";
 }
-.icon-nissan:before {
+.icon-engine:before {
   content: "\e901";
 }
-.icon-subaru:before {
-  content: "\e904";
-}
-.icon-steering:before {
+.icon-paint:before {
   content: "\e902";
 }
-.icon-toyota:before {
+.icon-search:before {
   content: "\e903";
 }
-.icon-configure:before {
+.icon-bag:before {
+  content: "\e904";
+}
+.icon-cars:before {
   content: "\e905";
 }
-.icon-honda:before {
+.icon-configure:before {
   content: "\e906";
 }
-.icon-map:before {
+.icon-honda:before {
   content: "\e907";
 }
-.icon-mazda:before {
+.icon-map:before {
   content: "\e908";
 }
-.icon-mitsubishi:before {
+.icon-mazda:before {
   content: "\e909";
 }
-.icon-bag:before {
+.icon-mitsubishi:before {
   content: "\e90a";
+}
+.icon-nissan:before {
+  content: "\e90b";
+}
+.icon-steering:before {
+  content: "\e90c";
+}
+.icon-subaru:before {
+  content: "\e90d";
+}
+.icon-toyota:before {
+  content: "\e90e";
 }

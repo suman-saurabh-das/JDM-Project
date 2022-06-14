@@ -8,22 +8,22 @@
 }
 
 #first-carousel{
-    background-image: url(http://drive.google.com/uc?export=view&id=17sTEAd2Hst1EJTx2-UQ7uy1Qq_m3uHcl);
-}
-#second-carousel{
-    background-image: url(http://drive.google.com/uc?export=view&id=1Jptd_Kal9i7fJQ9OndCMqW-a5G6Bwqng);
-}
-#third-carousel{
-    background-image: url(http://drive.google.com/uc?export=view&id=1gBs-ePXtbo_k6BqkztW6BjX_F6LvwbZY);
-}
-#fourth-carousel{
-    background-image: url(http://drive.google.com/uc?export=view&id=1L__bnf0bZ6CtYrR0TE8dgN_O-8eLNhP5);
-}
-#fifth-carousel{
     background-image: url(http://drive.google.com/uc?export=view&id=1JoIug8mQlTj0-pWqVhTL9XHd45wT0Pj2);
 }
-#sixth-carousel{
+#second-carousel{
     background-image: url(http://drive.google.com/uc?export=view&id=1213SFzxtEIYyzJh5UbehbFvg0PWgizTJ);
+}
+#third-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=17sTEAd2Hst1EJTx2-UQ7uy1Qq_m3uHcl);
+}
+#fourth-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=1Jptd_Kal9i7fJQ9OndCMqW-a5G6Bwqng);
+}
+#fifth-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=1gBs-ePXtbo_k6BqkztW6BjX_F6LvwbZY);
+}
+#sixth-carousel{
+    background-image: url(http://drive.google.com/uc?export=view&id=1L__bnf0bZ6CtYrR0TE8dgN_O-8eLNhP5); 
 }
 .landing-carousel-container{
     width: 100vw; height: 85vh;
@@ -59,7 +59,7 @@
     .carousel-description{
         font-size: 1.75rem;
     }
-    #first-carousel{
+    #third-carousel{
         background-image: url(http://drive.google.com/uc?export=view&id=1OJafPcwmDpzRvV4mgI9jt8JSj6qSLKsk);
     }
 }
@@ -81,17 +81,241 @@
 
 /* --------------- LANDING SECTION CAROUSEL ENDING --------------- */
 
-#models-section{
-    height: 100vh;
-    background-color: lightskyblue;
+/* --------------- MODELS SECTION GRID BEGINING --------------- */
+
+.models-header{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
 }
-#dealer-section{
-    height: 100vh;
-    background-color: lightgreen;
+
+.models-container{
+    background-size: cover;
+    box-sizing: border-box;
+    height: 25rem;
+    padding: 0;
+    position: relative;
+    background-position: 70% 100%;
 }
+
+#first-car-model{
+    background-image: url(/images/Honda\ NSX.jpg);
+}
+#second-car-model{
+    background-image: url(/images/Mazda\ RX-7.jpg);
+}
+#third-car-model{
+    background-image: url(/images/Toyota\ Supra\ Mk5.jpg);
+}
+#fourth-car-model{
+    background-image: url(/images/Subaru\ BRZ.jpg);
+}
+#fifth-car-model{    
+    background-image: url(/images/Misubishi\ Lancer\ Evo\ X.jpg);
+}
+#sixth-car-model{
+    background-image: url(/images/Nissan\ GT-R35.jpg);
+}
+
+.models-car-image{
+    width: 100%;
+    object-fit: cover;
+}
+.models-text-continer{
+    position: absolute;
+    top: 70%; left: 5%;
+}
+.square-button{
+    background-color: #ffffff00;
+    border: none; outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: background-color 0.5s;
+}
+.square-button:hover{
+    color: #fff;
+    background-color: #ef2b2c;
+    border: none
+}
+.models-text{
+    color: #fff;
+    font-size: 1rem;
+}
+
+@media (max-width:1280px) {
+    /* MEDIA QUERY FOR CAR IMAGE */
+    .models-container{
+        height: 20rem;
+    }
+}
+@media (max-width:1048px) {
+    /* MEDIA QUERY FOR CAR IMAGE */
+    .models-container{
+        background-position: 60% 100%;
+    }
+}
+@media (max-width:1023px) {
+    /* MEDIA QUERY FOR MODELS CONTAINER */
+    .models-header{
+        height: 5.5rem;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-left: 1.5rem;
+    }
+    .square-button{
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+}
+
+/* --------------- MODELS SECTION RESPONSIVE --------------- */
+
+@media (max-width:767px) {
+    /* MEDIA QUERY FOR MODELS CONTAINER */
+    .models-header{
+        height: 4.2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-left: 1rem;
+    }
+
+    .models-container{
+        height: 20rem;
+    }
+}
+@media (max-width:425px) {
+    /* MEDIA QUERY FOR CAR IMAGE */
+    .models-container{
+        height: 15rem;
+    }
+}
+
+/* --------------- MODELS SECTION GRID ENDING --------------- */
+
+/* --------------- SHOP SECTION GRID BEGINING --------------- */
+
+.shop-container{
+    height: 20rem;
+    background-position: center;
+    background-repeat: space;
+    object-fit: cover;
+}
+.shop-text-container{
+    position: relative;
+    top: 80%; left: 5%;
+}
+.shop-text-container:first-of-type{
+    left: 1%;
+}
+.square-button-negative{
+    background-color: #fff;
+    border: none; outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: background-color 0.5s;
+}
+.square-button-negative:hover{
+    background-color: #ef2b2c;
+    color: #fff;
+}
+
+#first-shop-image{
+    background-image: url(/images/JDM\ Shop.jpg);
+    background-size: 1024px 768px;
+}
+#second-shop-image{
+    background-image: url(/images/JDM\ Shop\ Parts.webp);
+    background-size: 540px 540px;
+}
+#third-shop-image{
+    background-image: url(/images/JDM\ Workshop.jpg);
+    background-size: 800px 600px;
+}
+#fourth-shop-image{
+    background-image: url(/images/Dyno\ Tuning\ 1.jpeg);
+    background-size: 600px 400px;
+}
+#fifth-shop-image{
+    background-image: url(/images/Dyno\ Tuning\ 2.jpg);
+    background-size: 540px 360px;
+}
+
+@media (min-width:1440px){
+    #first-shop-image{
+        background-size: 1440px 1080px;
+    }
+    #second-shop-image{
+        background-size: 640px 640px;
+    }
+    #third-shop-image{
+        background-size: 960px 720px;
+    }
+    #fourth-shop-image{
+        background-size: 660px 440px;
+    }
+    #fifth-shop-image{
+        background-size: 660px 440px;
+    }
+}
+@media (max-width:768px){
+    .square-button-negative{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    #first-shop-image{
+        background-size: 960px 720px;
+    }
+    #second-shop-image{
+        background-size: 540px 540px;
+    }
+    #third-shop-image{
+        background-size: 720px 540px;
+    }
+    #fourth-shop-image{
+        background-size: 480px 320px;
+    }
+    #fifth-shop-image{
+        background-size: 480px 320px;
+    }
+}
+@media (max-width:425px) {
+    .shop-container{
+        height: 10rem;
+    }
+    .square-button-negative{
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+    #first-shop-image{
+        background-size: 640px 480px;
+    }
+    #second-shop-image{
+        background-size: 240px 240px;
+    }
+    #third-shop-image{
+        background-size: 560px 420px;
+    }
+    #fourth-shop-image{
+        background-size: 300px 200px;
+    }
+    #fifth-shop-image{
+        background-size: 240px 160px;
+    }
+}
+
+/* --------------- SHOP SECTION GRID BEGINING --------------- */
+
 #jdm-social-section{
-    height: 100vh;
-    background-color: khaki;
+    
 }
 #jdm-bottom-navigation-menu{
     height: 100vh;
