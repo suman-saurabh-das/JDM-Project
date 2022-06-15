@@ -1,0 +1,172 @@
+/* --------------- SOCIAL SECTION GRID BEGINING --------------- */
+.social-flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.side-social-container{
+    display: flex;
+    flex-direction: column;
+    height: 30rem; width: 20%;
+}
+.side-inner-social-container{
+    background-size: 300px 300px;
+    object-fit: cover;
+    position: relative;
+    width: 100%; height: 50%;
+}
+.side-inner-social-container:hover{
+    background-color: white;
+    opacity: 0.8;
+    transition: all ease-in 0.5s;
+
+    animation: animatedBackground 3s linear alternate infinite;
+}
+.side-inner-social-container:hover .social-text{
+    opacity: 1;
+    transition: opacity ease-in 0.5s;
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+.social-text{
+    color: black;
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+}
+
+#car-meet-social{
+    background-image: url(/images/Car\ Meet.jpg);
+}
+#drift-social{
+    background-image: url(/images/Drift.jpg);
+}
+#midnight-run-social{
+    background-image: url(/images/Midnight\ run.jpg);
+}
+#rally-social{
+    background-image: url(/images/Rally.jpg);
+}
+
+.center-social-container{
+    position: relative;
+    background-color: black;
+    height: 30rem; width: 60%;
+}
+
+/* --------------- SOCIAL SECTION GRID RESPONSIVE --------------- */
+
+@media (min-width:1440px){
+    .side-social-container{
+        height: 40rem;
+    }
+    .center-social-container{
+        height: 40rem;
+    }
+    .side-inner-social-container{
+        background-size: 420px 420px;
+    }
+}
+@media (max-width:1023px){
+    .side-social-container{
+        height: 25rem;
+    }
+    .center-social-container{
+        height: 25rem;
+    }
+    .side-inner-social-container{
+        background-size: 250px 250px;
+    }
+    .social-text{
+        font-size: 1.75rem;
+    }
+}
+@media (max-width:540px){
+    .social-flex-container{
+        flex-direction: column;
+    }
+    .side-social-container{
+        display: flex;
+        flex-direction: row;
+        height: 12rem; width: 100%;
+    }
+    .side-inner-social-container{
+        width: 100%; height: 100%;
+        background-size: 300px 300px;
+    }
+    .center-social-container{
+        height: 15rem; width: 100%;
+    }
+}
+
+/* --------------- SOCIAL SECTION GRID ENDING --------------- */
+
+#jdm-bottom-navigation-menu{
+    height: 30vh;
+}
+
+/* --------------- FOOTER SECTION BEGINING --------------- */
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+}
+.footer-header{
+    color: white;
+    font-size: 1.25rem;
+}
+.footer-icons{
+    color: white;
+    padding: 10px 2px;
+    font-size: 2rem;
+}
+.footer-icons:hover{
+    color: #ef2b2c;
+}
+.footer-link{
+    color: white;
+    font-size: 1rem;
+    padding-right: 1rem;
+    line-height: 3.5;
+    text-decoration: underline;
+}
+
+
+@media (max-width:1023px){
+    .footer-content{
+        flex-direction: column-reverse;
+        padding: 2rem 3rem;
+    }
+    .footer-header{
+        padding-top: 1.5rem;
+    }
+    .footer-link{
+        line-height: 1.5;
+    }
+}
+@media (max-width:540px){
+    .footer-content{
+        padding: 2rem 1rem;
+    }
+    .footer-header{
+        font-size: 1rem;
+    }
+    .footer-link{
+        font-size: 0.85rem;
+    }
+}
+/* --------------- FOOTER SECTION ENDING --------------- */

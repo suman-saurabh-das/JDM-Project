@@ -18,11 +18,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Style sheets -->
-    <link rel="stylesheet" href="styles/stylesBootstrap.css">
     <link rel="stylesheet" href="styles/stylesLogo.css">
     <link rel="stylesheet" href="styles/stylesGlobal.css">
     <link rel="stylesheet" href="styles/stylesNavBar.css">
     <link rel="stylesheet" href="styles/stylesMain.css">
+    <link rel="stylesheet" href="styles/stylesFooter.css">
 
     <!-- Pre-loading the Carousel images -->
     <link rel="preload" href="http://drive.google.com/uc?export=view&id=1OJafPcwmDpzRvV4mgI9jt8JSj6qSLKsk" as="image">
@@ -357,14 +357,69 @@
 
         <section id="jdm-social-section">
             <div class="models-header black-lg-title">Social</div>
+            <!-- SOCIAL GRID LAYOUT BEGINING -->
+            <div class="social-flex-container">
+                <div class="side-social-container">
+                    <div class="side-inner-social-container" id="car-meet-social">
+                       <div class="social-text">
+                            <i class="fa-solid fa-circle-play"></i><br>
+                            Car Meets
+                       </div>
+                    </div>
+                    <div class="side-inner-social-container" id="drift-social">
+                        <div class="social-text">
+                            <i class="fa-solid fa-circle-play"></i><br>
+                            Drifting
+                       </div>
+                    </div>
+                </div>
+                <div class="center-social-container">
+                    <video class="video" controls width="100%" height="100%">
+                        <source id="video-select" src="https://drive.google.com/uc?export=download&id=1JDJwtu0GLBGrIDK7o4ckb9HEK64PPAp3" type="video/mp4">
+                    </video>
+                </div>
+                <div class="side-social-container">
+                    <div class="side-inner-social-container" id="midnight-run-social">
+                        <div class="social-text">
+                            <i class="fa-solid fa-circle-play"></i><br>
+                            Midnight Run
+                       </div>
+                    </div>
+                    <div class="side-inner-social-container" id="rally-social">
+                        <div class="social-text">
+                            <i class="fa-solid fa-circle-play"></i><br>
+                            Rallying
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SOCIAL GRID LAYOUT ENDING -->
+
         </section>
         <section id="jdm-bottom-navigation-menu">
 
         </section>
     </main>
 
-    <footer>
-        © 2022 JDM 🎌 - Website by Suman Saurabh Das
+    <footer id="footer" class="bg-dark">
+        <div class="footer-content">
+            <div class="footer-header">© 2022 JDM 🎌 - Website by Suman Saurabh Das <br>
+                <a class="footer-link" href="">Attribution</a>
+                <a class="footer-link" href="">Privacy Policy</a>
+                <a class="footer-link" href="">Terms and Conditions</a>
+                <a class="footer-link" href="">Usage Rights</a>
+            </div>
+            <div class="">
+                <div class="footer-header">Connect with Us !</div>
+                <a href=""><i class="fa-brands fa-linkedin footer-icons"></i></a>
+                <a href=""><i class="fa-brands fa-github-square footer-icons"></i></a>
+                <a href=""><i class="fa-brands fa-youtube-square footer-icons"></i></a>
+                <a href=""><i class="fa-brands fa-instagram-square footer-icons"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square footer-icons"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-square footer-icons"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest-square footer-icons"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="index.js"></script>

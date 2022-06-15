@@ -249,6 +249,8 @@
     background-size: 540px 360px;
 }
 
+/* --------------- SHOP SECTION GRID RESPONSIVE --------------- */
+
 @media (min-width:1440px){
     #first-shop-image{
         background-size: 1440px 1080px;
@@ -312,12 +314,4 @@
     }
 }
 
-/* --------------- SHOP SECTION GRID BEGINING --------------- */
-
-#jdm-social-section{
-    
-}
-#jdm-bottom-navigation-menu{
-    height: 100vh;
-    background-color: plum;
-}
+/* --------------- SHOP SECTION GRID ENDING --------------- */

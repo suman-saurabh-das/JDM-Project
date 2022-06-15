@@ -126,3 +126,38 @@ sideBarButtonOpen.addEventListener("click", function(){
 sideBarButtonClose.addEventListener("click", function(){
     sideBar.style.transform = "translateX(100vw)";
 })
+
+// VIDEO SELECTION
+
+var videoSelect = document.getElementById("video-select");
+var centerSocialContainer = document.querySelector(".center-social-container");
+
+var carMeet = document.getElementById("car-meet-social");
+var drift = document.getElementById("drift-social");
+var midnightRun = document.getElementById("midnight-run-social");
+var rallySocial = document.getElementById("rally-social");
+
+carMeet.addEventListener("click", function(){
+    centerSocialContainer.innerHTML = `
+    <video class="video" controls width="100%" height="100%">
+        <source id="video-select" src="https://drive.google.com/uc?export=download&id=1a-tC2mYLTYNGnkZBDz1eBg1AK34nBvOb" type="video/mp4">
+    </video>`
+})
+drift.addEventListener("click", function(){
+    centerSocialContainer.innerHTML = `
+    <video class="video" controls width="100%" height="100%">
+        <source id="video-select" src="https://drive.google.com/uc?export=download&id=1hSrzqqNpBSNxVdcZnUPddCDtbXR3Jaga" type="video/mp4">
+    </video>`
+})
+midnightRun.addEventListener("click", function(){
+    centerSocialContainer.innerHTML = `
+    <video class="video" controls width="100%" height="100%">
+        <source id="video-select" src="https://drive.google.com/uc?export=download&id=1md9DAkmYlLxe8LgFhnwjxtjMsZBJ6eZZ" type="video/mp4">
+    </video>`
+})
+rallySocial.addEventListener("click", function(){
+    centerSocialContainer.innerHTML = `
+    <video class="video" controls width="100%" height="100%">
+        <source id="video-select" src="https://drive.google.com/uc?export=download&id=1tpx2_JmL7xgEfms3LYRm__1Lx72IJClX" type="video/mp4">
+    </video>`
+})
