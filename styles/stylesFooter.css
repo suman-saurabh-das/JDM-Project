@@ -49,16 +49,16 @@
 }
 
 #car-meet-social{
-    background-image: url(/images/Car\ Meet.jpg);
+    background-image: url(http://drive.google.com/uc?export=view&id=1QY1677H9lJO3TGyq2bjRjVe4cSvL2rrZ);
 }
 #drift-social{
-    background-image: url(/images/Drift.jpg);
+    background-image: url(http://drive.google.com/uc?export=view&id=1IGI9KkQpgVK4RcMml0P_pjSYyFHzBvFT);
 }
 #midnight-run-social{
-    background-image: url(/images/Midnight\ run.jpg);
+    background-image: url(http://drive.google.com/uc?export=view&id=1BH4wBIBdTbicfcZbdnQtnSeWyD-RmhzU);
 }
 #rally-social{
-    background-image: url(/images/Rally.jpg);
+    background-image: url(http://drive.google.com/uc?export=view&id=1KmKNwu74nYQlQ4BBei2T1JZAoeyFa7Ed);
 }
 
 .center-social-container{
@@ -114,7 +114,7 @@
 
 /* --------------- SOCIAL SECTION GRID ENDING --------------- */
 
-#jdm-bottom-navigation-menu{
+#jdm-bottom-slider{
     height: 30vh;
 }
 

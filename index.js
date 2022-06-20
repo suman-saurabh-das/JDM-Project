@@ -1,11 +1,21 @@
-var nsx = "images/Honda NSX.png";
-var rx7 = "images/Mazda RX-7.png";
-var supra = "images/Toyota Supra Mk5.png";
-var gtr = "images/Nissan GT-R35.png";
-var brz = "images/Subaru BRZ.png";
-var lancer = "images/Mitsubishi Lancer Evo X.png";
-var dealer = "images/Dealer Map.png";
-var shop = "images/Shop.png";
+var imagesNavBar = new Array();
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        imagesNavBar[i] = new Image();
+        imagesNavBar[i].src = preload.arguments[i];
+    }
+}
+
+// Image order - nsx, rx7, lancer, gtr, brz, supra, shop
+preload(
+    "http://drive.google.com/uc?export=view&id=1cdHTLXwznwLj2FrSTmmdcs9n8D8V-Bpj",
+    "http://drive.google.com/uc?export=view&id=1W6BA2Ag9LQ8QhGnTLoUBjddjVZF8v4FW",
+    "http://drive.google.com/uc?export=view&id=1qEblv69AVVImTQn5Itn1wnNC-h44V9DG",
+    "http://drive.google.com/uc?export=view&id=1dpSBwEtsJOxGDCNivNP4a4ITfUcPzphv",
+    "http://drive.google.com/uc?export=view&id=11OUCW7f7gTf5wir0rvbhUBqdilEThRPt",
+    "http://drive.google.com/uc?export=view&id=1MJtA9CNRbTCImyhpI1eEsL0uQB19TItp",
+    "http://drive.google.com/uc?export=view&id=17e0HrGlxVaGIaP9JOIXT1nt8910XqiWu"
+);
 
 // NAV BAR FUNCTION - SCROLL UP TO HIDE & SCROLL DOWN TO SHOW
 var lastScrollTop = 0;
@@ -65,32 +75,32 @@ function updateDropdown(carName) {
     switch (carName) {
         case "nsx": hideMap.style.display = "none";
                     hideImage.style.display = "block";
-                    dropdownImage.setAttribute("src", nsx);
+                    dropdownImage.setAttribute("src", imagesNavBar[0].src);
                     dropdownCarName.innerHTML = "<span class='icon-honda'></span>&ensp;NSX Gen 2";
                     break;
         case "rx7": hideMap.style.display = "none";
                     hideImage.style.display = "block";
-                    dropdownImage.setAttribute("src", rx7);
+                    dropdownImage.setAttribute("src", imagesNavBar[1].src);
                     dropdownCarName.innerHTML = "<span class='icon-mazda'></span>&ensp;RX-7";
                     break;
         case "supra": hideMap.style.display = "none";
                     hideImage.style.display = "block";
-                    dropdownImage.setAttribute("src", supra);
+                    dropdownImage.setAttribute("src", imagesNavBar[5].src);
                     dropdownCarName.innerHTML = "<span class='icon-toyota'></span>&ensp;Supra Mk 5";
                     break;
         case "gtr": hideMap.style.display = "none";
                     hideImage.style.display = "block";
-                    dropdownImage.setAttribute("src", gtr);
+                    dropdownImage.setAttribute("src", imagesNavBar[3].src);
                     dropdownCarName.innerHTML = "<span class='icon-nissan'></span>&ensp;R35 GT-R";
                     break;
         case "brz": hideMap.style.display = "none";
                     hideImage.style.display = "block";
-                    dropdownImage.setAttribute("src", brz);
+                    dropdownImage.setAttribute("src", imagesNavBar[4].src);
                     dropdownCarName.innerHTML = "<span class='icon-subaru'></span>&ensp;BRZ Limited";
                     break;
         case "lancer": hideMap.style.display = "none";
                     hideImage.style.display = "block";
-                    dropdownImage.setAttribute("src", lancer);
+                    dropdownImage.setAttribute("src", imagesNavBar[2].src);
                     dropdownCarName.innerHTML = "<span class='icon-mitsubishi'></span>&ensp;Lancer Evo X";
                     break;
         case "dealer" : hideMap.style.display = "block";
@@ -107,7 +117,7 @@ function updateDropdown(carName) {
                     // TO TOGGLE THE CONTENT OF THE SHOP SECTION
                     dropdownOptionsShopDetails.style.display = "block"
                     dropdownOptionsDealerDetails.style.display = "none"
-                    dropdownImage.setAttribute("src", shop);
+                    dropdownImage.setAttribute("src", imagesNavBar[6].src);
                     dropdownOptionsHeader.innerHTML = `<a href='#models-section'>Browse Models</a><br>
                                                        <a href='#shop-section'>Accessories & Services</a>`;
                     break;
