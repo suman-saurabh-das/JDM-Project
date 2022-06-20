@@ -114,8 +114,61 @@
 
 /* --------------- SOCIAL SECTION GRID ENDING --------------- */
 
-#jdm-bottom-slider{
-    height: 30vh;
+.jdm-bottom-slider{
+    display: grid;
+    height: 250px; width: 90%;
+    overflow: hidden;
+    position: relative;
+    place-items: center;
+    margin: auto;
+}
+.jdm-bottom-slide-track{
+    display: flex;
+    /* Width of one slide * 22 lides (2*11) */
+    width: calc(250px * 22);
+    animation: jdm-scroll 40s linear infinite;
+}
+.jdm-bottom-slide{
+    height: 200px; width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+}
+.jdm-bottom-slider-image{
+    width: 100%;
+}
+@keyframes jdm-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 11));
+    }
+}
+
+@media (max-width:1023px){
+    .jdm-bottom-slider{
+        height: 200px;
+    }
+    .jdm-bottom-slide-track {
+        width: calc(200px * 22);
+    }
+    .jdm-bottom-slide{
+        height: 150px; width: 200px;
+        padding: 10px 20px;
+    }
+}
+@media (max-width:540px){
+    .jdm-bottom-slider{
+        height: 150px;
+    }
+    .jdm-bottom-slide-track {
+        width: calc(150px * 22);
+    }
+    .jdm-bottom-slide{
+        height: 80px; width: 150px;
+        padding: 10px 15px;
+    }
 }
 
 /* --------------- FOOTER SECTION BEGINING --------------- */

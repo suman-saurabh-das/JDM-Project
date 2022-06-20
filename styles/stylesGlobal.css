@@ -1,3 +1,18 @@
+/* Custom Scroll Bars */
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #ccc;
+    height: 1px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ef2b2c;
+    border-radius: 100vw;
+    border: 2px solid rgb(177, 177, 177);
+}
+
 /* -------------------- GLOBAL STYLES BEGINING -------------------- */
 
 body{
